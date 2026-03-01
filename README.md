@@ -5,4 +5,4 @@ Simple commands that paste saved blocks using Schematic in WorldEdit plugin in M
 2. Save blocks using //schem save -> plugins/WorldEdit/schematics(Default).
 
 *runonce* - Pastes blocks on the same places that were copied before.
-**When pasting, blocks will overridden.**
+**When pasting, blocks will be overridden.**
