@@ -19,14 +19,14 @@ import java.io.FileInputStream;
 public final class Schematic {
 
     public static void onFalse() {
-        Bukkit.broadcastMessage("§d" + "건축물 자동 복구 취소됨.");
+        Bukkit.broadcastMessage("§d" + "Schematic automatic pasting canceled. 건축물 자동 복구 취소됨.");
     }
 
     public static void runOnce(String name) {
         if (!paste(name)) {
-            Bukkit.broadcastMessage(ChatColor.RED + "건축물 복구 오류. 서버장의 서버 기록을 확인해주세요.");
+            Bukkit.broadcastMessage(ChatColor.RED + "Error while pasting blocks. Please check the server logs. 건축물 복구 오류. 서버장의 서버 기록을 확인해주세요.");
         }
-        else Bukkit.broadcastMessage("§d" + "건축물 " + name + "복구됨.");
+        else Bukkit.broadcastMessage("§d" + "Schematic " + name + "pasted. 건축물 복구됨.");
     }
 
     public static boolean paste(String name)
