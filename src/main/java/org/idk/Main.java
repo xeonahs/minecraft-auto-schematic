@@ -56,10 +56,10 @@ public class Main extends JavaPlugin implements CommandExecutor, TabCompleter {
                 if (!Schematic.paste(name)) {
                     Bukkit.broadcastMessage(ChatColor.RED + "Error while pasting blocks. Please check the server logs. 건축물 복구 오류. 서버장의 서버 기록을 확인해주세요.");
                 }
-                else Bukkit.broadcastMessage("§d" + "건축물 " + name + " 복구됨. Schematic " + name + " pasted.");
+                else Bukkit.broadcastMessage("§d" + "Schematic " + name + "pasted. 건축물 복구됨.");
             }
         }, 0L, 60L);
-        Bukkit.broadcastMessage("§d" + "Schematic " + name + " is going to be pasted every 15 minutes. 건축물 15분마다 자동 복구 시작.");
+        Bukkit.broadcastMessage("§d" + "Schematic " + name + "is going to be pasted every 15 minutes. 건축물 15분마다 자동 복구 시작.");
     }
 
     @Override
